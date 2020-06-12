@@ -1,0 +1,44 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.assalam.school"
+    },
+    "jhipsterVersion": "6.8.0",
+    "applicationType": "monolith",
+    "baseName": "schoolManagement",
+    "packageName": "com.assalam.school",
+    "packageFolder": "com/assalam/school",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "messageBroker": false,
+    "buildTool": "maven",
+    "jwtSecretKey": "OWM2ZTAyZDczYTM2ZDVhNDgyMzAxM2I4ZGIwNjNmZWI3NzdhNjc3OTIxYWNjMTk2MDZiYzMxNDNjMmJjNWVmYjA1NmExZTM3MWMzYzk5NWJiODhkNzYyOGYxNmM4NGE2M2ZkNmY3MDRlZmMyZDVlNGExODQ4ODI1YWEzNDBhYWE=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "materia",
+    "clientThemeVariant": "primary",
+    "creationTimestamp": 1591998995832,
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-quarkus",
+        "version": "0.1.6"
+      }
+    ],
+    "enableTranslation": false,
+    "blueprints": [
+      {
+        "name": "generator-jhipster-quarkus",
+        "version": "0.1.6"
+      }
+    ]
+  }
+}

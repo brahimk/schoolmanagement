@@ -1,0 +1,73 @@
+
+entity Famille {
+	nom String required
+    prenom String required
+    adresse String
+    codePostal Long
+    ville String
+    telephone1 Long required
+    telephone2 Long required
+    email1 String required
+    email2 String
+    comment String
+}
+
+entity Eleve {
+	nom String required
+    prenom String required
+    dateNaissance Instant required
+    niveauScolaire String
+    niveauArabe String
+    comment String
+    image Blob    
+}
+
+entity Discipline {
+	date Instant required
+    description TextBlob
+    comment String    
+}
+
+entity Professeur {
+	nom String required
+    prenom String required
+    comment String
+}
+
+entity Classe {
+	nom String required
+    niveau String required
+    salle Salle
+    creneau Creneau
+    comment String
+}
+
+entity FeuillePresenceEleve {
+	date Instant required
+    present Boolean
+    description TextBlob
+    comment String
+}
+
+enum Creneau {
+    MECREDI_MATIN, MERCREDI_APRES_MIDI,
+    SAMEDI_MATIN, SAMEDI_APRES_MIDI,
+    DIMANCHE_MATIN, DIMANCHE_APRES_MIDI
+}
+
+enum Salle {
+    SALLE_1, SALLE_2, SALLE_3, SALLE_4,
+    SALLE_5, SALLE_6, SALLE_7, SALLE_8,
+    SALLE_9, SALLE_10, SALLE_11, SALLE_12,
+    SALLE_13, AUTRE
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Famille to Eleve{enfant(prenom)},	
+	Discipline to Eleve{eleve(prenom)},	
+	Professeur to Classe{classe(nom)},	
+	Classe to Eleve{eleve(prenom)},	
+	Classe to FeuillePresenceEleve{feuillepresence(prenom)}	
+	FeuillePresenceEleve to Eleve{eleve(prenom)},
+}
