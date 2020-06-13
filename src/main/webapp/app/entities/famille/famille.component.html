@@ -1,0 +1,79 @@
+<div>
+    <h2 id="page-heading">
+        <span>Familles</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-famille" [routerLink]="['/famille/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span>
+            Create a new Famille
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="familles?.length === 0">
+        <span>No familles found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="familles?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span>ID</span></th>
+                    <th scope="col" ><span>Nom</span></th>
+                    <th scope="col" ><span>Prenom</span></th>
+                    <th scope="col" ><span>Adresse</span></th>
+                    <th scope="col" ><span>Code Postal</span></th>
+                    <th scope="col" ><span>Ville</span></th>
+                    <th scope="col" ><span>Telephone 1</span></th>
+                    <th scope="col" ><span>Telephone 2</span></th>
+                    <th scope="col" ><span>Email 1</span></th>
+                    <th scope="col" ><span>Email 2</span></th>
+                    <th scope="col" ><span>Comment</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let famille of familles ;trackBy: trackId">
+                    <td><a [routerLink]="['/famille', famille.id, 'view']">{{ famille.id }}</a></td>
+                    <td>{{ famille.nom }}</td>
+                    <td>{{ famille.prenom }}</td>
+                    <td>{{ famille.adresse }}</td>
+                    <td>{{ famille.codePostal }}</td>
+                    <td>{{ famille.ville }}</td>
+                    <td>{{ famille.telephone1 }}</td>
+                    <td>{{ famille.telephone2 }}</td>
+                    <td>{{ famille.email1 }}</td>
+                    <td>{{ famille.email2 }}</td>
+                    <td>{{ famille.comment }}</td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/famille', famille.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/famille', famille.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(famille)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

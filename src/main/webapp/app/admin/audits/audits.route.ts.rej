@@ -1,0 +1,9 @@
+diff a/src/main/webapp/app/admin/audits/audits.route.ts b/src/main/webapp/app/admin/audits/audits.route.ts	(rejected hunks)
+@@ -10 +10 @@ export const auditsRoute: Route = {
+-    pagingParams: JhiResolvePagingParams,
++    pagingParams: JhiResolvePagingParams
+@@ -14,2 +14,2 @@ export const auditsRoute: Route = {
+-    defaultSort: 'auditEventDate,desc',
+-  },
++    defaultSort: 'auditEventDate,desc'
++  }

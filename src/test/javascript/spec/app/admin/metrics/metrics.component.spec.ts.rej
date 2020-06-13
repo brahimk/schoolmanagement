@@ -1,0 +1,15 @@
+diff a/src/test/javascript/spec/app/admin/metrics/metrics.component.spec.ts b/src/test/javascript/spec/app/admin/metrics/metrics.component.spec.ts	(rejected hunks)
+@@ -17 +17 @@ describe('Component Tests', () => {
+-        declarations: [MetricsComponent],
++        declarations: [MetricsComponent]
+@@ -35 +35 @@ describe('Component Tests', () => {
+-            unrelatedKey: 'test',
++            unrelatedKey: 'test'
+@@ -39 +39 @@ describe('Component Tests', () => {
+-              value: 2,
++              value: 2
+@@ -41,2 +41,2 @@ describe('Component Tests', () => {
+-            unrelatedKey: 'test',
+-          },
++            unrelatedKey: 'test'
++          }

@@ -1,0 +1,6 @@
+diff a/src/test/javascript/spec/helpers/mock-route.service.ts b/src/test/javascript/spec/helpers/mock-route.service.ts	(rejected hunks)
+@@ -17,2 +17,2 @@ export class MockActivatedRoute extends ActivatedRoute {
+-        predicate: 'id',
+-      },
++        predicate: 'id'
++      }

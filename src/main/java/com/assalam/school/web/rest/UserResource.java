@@ -56,7 +56,7 @@ import org.slf4j.LoggerFactory;
 public class UserResource {
     private final Logger log = LoggerFactory.getLogger(UserResource.class);
 
-    private static final String ENTITY_NAME = "users";
+    // private static final String ENTITY_NAME = "users";
 
     final String applicationName;
 

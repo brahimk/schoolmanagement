@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/admin/metrics/metrics.module.ts b/src/main/webapp/app/admin/metrics/metrics.module.ts	(rejected hunks)
+@@ -11 +11 @@ import { metricsRoute } from './metrics.route';
+-  declarations: [MetricsComponent],
++  declarations: [MetricsComponent]

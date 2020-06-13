@@ -1,0 +1,25 @@
+diff a/src/main/webapp/app/core/core.module.ts b/src/main/webapp/app/core/core.module.ts	(rejected hunks)
+@@ -30,2 +30,2 @@ import { fontAwesomeIcons } from './icons/font-awesome-icons';
+-      alertTimeout: 5000,
+-    }),
++      alertTimeout: 5000
++    })
+@@ -37 +37 @@ import { fontAwesomeIcons } from './icons/font-awesome-icons';
+-      useValue: 'en',
++      useValue: 'en'
+@@ -44 +44 @@ import { fontAwesomeIcons } from './icons/font-awesome-icons';
+-      multi: true,
++      multi: true
+@@ -49 +49 @@ import { fontAwesomeIcons } from './icons/font-awesome-icons';
+-      multi: true,
++      multi: true
+@@ -54 +54 @@ import { fontAwesomeIcons } from './icons/font-awesome-icons';
+-      multi: true,
++      multi: true
+@@ -59,3 +59,3 @@ import { fontAwesomeIcons } from './icons/font-awesome-icons';
+-      multi: true,
+-    },
+-  ],
++      multi: true
++    }
++  ]

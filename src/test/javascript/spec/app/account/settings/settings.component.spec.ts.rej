@@ -1,0 +1,10 @@
+diff a/src/test/javascript/spec/app/account/settings/settings.component.spec.ts b/src/test/javascript/spec/app/account/settings/settings.component.spec.ts	(rejected hunks)
+@@ -24 +24 @@ describe('Component Tests', () => {
+-      imageUrl: '',
++      imageUrl: ''
+@@ -31 +31 @@ describe('Component Tests', () => {
+-        providers: [FormBuilder],
++        providers: [FormBuilder]
+@@ -50 +50 @@ describe('Component Tests', () => {
+-        email: 'john.doe@mail.com',
++        email: 'john.doe@mail.com'

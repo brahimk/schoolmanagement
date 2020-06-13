@@ -1,0 +1,10 @@
+diff a/src/main/webapp/app/account/settings/settings.component.ts b/src/main/webapp/app/account/settings/settings.component.ts	(rejected hunks)
+@@ -9 +9 @@ import { Account } from 'app/core/user/account.model';
+-  templateUrl: './settings.component.html',
++  templateUrl: './settings.component.html'
+@@ -17 +17 @@ export class SettingsComponent implements OnInit {
+-    email: [undefined, [Validators.required, Validators.minLength(5), Validators.maxLength(254), Validators.email]],
++    email: [undefined, [Validators.required, Validators.minLength(5), Validators.maxLength(254), Validators.email]]
+@@ -28 +28 @@ export class SettingsComponent implements OnInit {
+-          email: account.email,
++          email: account.email

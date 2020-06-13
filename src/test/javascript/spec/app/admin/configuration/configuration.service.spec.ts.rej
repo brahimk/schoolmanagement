@@ -1,0 +1,29 @@
+diff a/src/test/javascript/spec/app/admin/configuration/configuration.service.spec.ts b/src/test/javascript/spec/app/admin/configuration/configuration.service.spec.ts	(rejected hunks)
+@@ -15 +15 @@ describe('Service Tests', () => {
+-        imports: [HttpClientTestingModule],
++        imports: [HttpClientTestingModule]
+@@ -41,3 +41,3 @@ describe('Service Tests', () => {
+-              name: 'jhipsterApp',
+-            },
+-          },
++              name: 'jhipsterApp'
++            }
++          }
+@@ -49,4 +49,4 @@ describe('Service Tests', () => {
+-                'io.github.jhipster.config.JHipsterProperties': bean,
+-              },
+-            },
+-          },
++                'io.github.jhipster.config.JHipsterProperties': bean
++              }
++            }
++          }
+@@ -67,4 +67,4 @@ describe('Service Tests', () => {
+-                value: '8080',
+-              },
+-            },
+-          },
++                value: '8080'
++              }
++            }
++          }

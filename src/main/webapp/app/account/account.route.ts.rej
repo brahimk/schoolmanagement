@@ -1,0 +1,6 @@
+diff a/src/main/webapp/app/account/account.route.ts b/src/main/webapp/app/account/account.route.ts	(rejected hunks)
+@@ -15,2 +15,2 @@ export const accountState: Routes = [
+-    children: ACCOUNT_ROUTES,
+-  },
++    children: ACCOUNT_ROUTES
++  }

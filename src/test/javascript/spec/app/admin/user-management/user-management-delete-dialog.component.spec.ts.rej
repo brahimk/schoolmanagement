@@ -1,0 +1,4 @@
+diff a/src/test/javascript/spec/app/admin/user-management/user-management-delete-dialog.component.spec.ts b/src/test/javascript/spec/app/admin/user-management/user-management-delete-dialog.component.spec.ts	(rejected hunks)
+@@ -23 +23 @@ describe('Component Tests', () => {
+-        declarations: [UserManagementDeleteDialogComponent],
++        declarations: [UserManagementDeleteDialogComponent]

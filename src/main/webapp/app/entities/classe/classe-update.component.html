@@ -1,0 +1,96 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-classe-heading">Create or edit a Classe</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_nom">Nom</label>
+                    <input type="text" class="form-control" name="nom" id="field_nom"
+                           formControlName="nom"/>
+                    <div *ngIf="editForm.get('nom')!.invalid && (editForm.get('nom')!.dirty || editForm.get('nom')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('nom')?.errors?.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_niveau">Niveau</label>
+                    <input type="text" class="form-control" name="niveau" id="field_niveau"
+                           formControlName="niveau"/>
+                    <div *ngIf="editForm.get('niveau')!.invalid && (editForm.get('niveau')!.dirty || editForm.get('niveau')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('niveau')?.errors?.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_salle">Salle</label>
+                    <select class="form-control" name="salle" formControlName="salle" id="field_salle">
+                        <option value="SALLE_1">SALLE_1</option>
+                        <option value="SALLE_2">SALLE_2</option>
+                        <option value="SALLE_3">SALLE_3</option>
+                        <option value="SALLE_4">SALLE_4</option>
+                        <option value="SALLE_5">SALLE_5</option>
+                        <option value="SALLE_6">SALLE_6</option>
+                        <option value="SALLE_7">SALLE_7</option>
+                        <option value="SALLE_8">SALLE_8</option>
+                        <option value="SALLE_9">SALLE_9</option>
+                        <option value="SALLE_10">SALLE_10</option>
+                        <option value="SALLE_11">SALLE_11</option>
+                        <option value="SALLE_12">SALLE_12</option>
+                        <option value="SALLE_13">SALLE_13</option>
+                        <option value="AUTRE">AUTRE</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_creneau">Creneau</label>
+                    <select class="form-control" name="creneau" formControlName="creneau" id="field_creneau">
+                        <option value="MECREDI_MATIN">MECREDI_MATIN</option>
+                        <option value="MERCREDI_APRES_MIDI">MERCREDI_APRES_MIDI</option>
+                        <option value="SAMEDI_MATIN">SAMEDI_MATIN</option>
+                        <option value="SAMEDI_APRES_MIDI">SAMEDI_APRES_MIDI</option>
+                        <option value="DIMANCHE_MATIN">DIMANCHE_MATIN</option>
+                        <option value="DIMANCHE_APRES_MIDI">DIMANCHE_APRES_MIDI</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_comment">Comment</label>
+                    <input type="text" class="form-control" name="comment" id="field_comment"
+                           formControlName="comment"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_professeur">Professeur</label>
+                    <select class="form-control" id="field_professeur" name="professeur" formControlName="professeur">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="professeurOption.id === editForm.get('professeur')!.value?.id ? editForm.get('professeur')!.value : professeurOption" *ngFor="let professeurOption of professeurs; trackBy: trackById">{{ professeurOption.nom }}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span>Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span>Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

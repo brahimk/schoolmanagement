@@ -1,0 +1,79 @@
+<div>
+    <h2 id="page-heading">
+        <span>Feuille Presences</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-feuille-presence" [routerLink]="['/feuille-presence/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span>
+            Create a new Feuille Presence
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="feuillePresences?.length === 0">
+        <span>No feuillePresences found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="feuillePresences?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span>ID</span></th>
+                    <th scope="col" ><span>Date</span></th>
+                    <th scope="col" ><span>Present</span></th>
+                    <th scope="col" ><span>Description</span></th>
+                    <th scope="col" ><span>Comment</span></th>
+                    <th scope="col" ><span>Professeur</span></th>
+                    <th scope="col" ><span>Eleve</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let feuillePresence of feuillePresences ;trackBy: trackId">
+                    <td><a [routerLink]="['/feuille-presence', feuillePresence.id, 'view']">{{ feuillePresence.id }}</a></td>
+                    <td>{{ feuillePresence.date | date:'medium' }}</td>
+                    <td>{{ feuillePresence.present }}</td>
+                    <td>{{ feuillePresence.description }}</td>
+                    <td>{{ feuillePresence.comment }}</td>
+                    <td>
+                        <div *ngIf="feuillePresence.professeur">
+                            <a [routerLink]="['/professeur', feuillePresence.professeur?.id, 'view']" >{{ feuillePresence.professeur?.nom }}</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div *ngIf="feuillePresence.eleve">
+                            <a [routerLink]="['/eleve', feuillePresence.eleve?.id, 'view']" >{{ feuillePresence.eleve?.prenom }}</a>
+                        </div>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/feuille-presence', feuillePresence.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/feuille-presence', feuillePresence.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(feuillePresence)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

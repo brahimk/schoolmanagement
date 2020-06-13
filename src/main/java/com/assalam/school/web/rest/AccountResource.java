@@ -40,7 +40,9 @@ public class AccountResource {
 
     private static class AccountResourceException extends RuntimeException {
 
-        private AccountResourceException(String message) {
+		private static final long serialVersionUID = -3403098412109575260L;
+
+		private AccountResourceException(String message) {
             super(message);
         }
     }

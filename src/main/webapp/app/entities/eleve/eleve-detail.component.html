@@ -1,0 +1,69 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="eleve">
+            <h2><span>Eleve</span> {{ eleve.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Nom</span></dt>
+                <dd>
+                    <span>{{ eleve.nom }}</span>
+                </dd>
+                <dt><span>Prenom</span></dt>
+                <dd>
+                    <span>{{ eleve.prenom }}</span>
+                </dd>
+                <dt><span>Date Naissance</span></dt>
+                <dd>
+                    <span>{{ eleve.dateNaissance }}</span>
+                </dd>
+                <dt><span>Niveau Scolaire</span></dt>
+                <dd>
+                    <span>{{ eleve.niveauScolaire }}</span>
+                </dd>
+                <dt><span>Niveau Arabe</span></dt>
+                <dd>
+                    <span>{{ eleve.niveauArabe }}</span>
+                </dd>
+                <dt><span>Comment</span></dt>
+                <dd>
+                    <span>{{ eleve.comment }}</span>
+                </dd>
+                <dt><span>Image</span></dt>
+                <dd>
+                    <div *ngIf="eleve.image">
+                        <a (click)="openFile(eleve?.imageContentType!, eleve?.image)">open</a>
+                        {{ eleve.imageContentType }}, {{ byteSize(eleve.image) }}
+                    </div>
+                </dd>
+                <dt><span>Famille</span></dt>
+                <dd>
+                    <div *ngIf="eleve.famille">
+                        <a [routerLink]="['/famille', eleve.famille?.id, 'view']">{{ eleve.famille?.nom }}</a>
+                    </div>
+                </dd>
+                <dt><span>Classe</span></dt>
+                <dd>
+                    <div *ngIf="eleve.classe">
+                        <a [routerLink]="['/classe', eleve.classe?.id, 'view']">{{ eleve.classe?.nom }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/eleve', eleve.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

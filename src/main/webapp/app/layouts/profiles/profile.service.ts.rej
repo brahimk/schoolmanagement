@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/layouts/profiles/profile.service.ts b/src/main/webapp/app/layouts/profiles/profile.service.ts	(rejected hunks)
+@@ -26 +26 @@ export class ProfileService {
+-          swaggerEnabled: response.activeProfiles && response.activeProfiles.includes('swagger'),
++          swaggerEnabled: response.activeProfiles && response.activeProfiles.includes('swagger')

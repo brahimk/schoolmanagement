@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/home/home.component.ts b/src/main/webapp/app/home/home.component.ts	(rejected hunks)
+@@ -11 +11 @@ import { Account } from 'app/core/user/account.model';
+-  styleUrls: ['home.scss'],
++  styleUrls: ['home.scss']

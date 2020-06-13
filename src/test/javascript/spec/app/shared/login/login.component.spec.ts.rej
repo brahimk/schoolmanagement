@@ -1,0 +1,20 @@
+diff a/src/test/javascript/spec/app/shared/login/login.component.spec.ts b/src/test/javascript/spec/app/shared/login/login.component.spec.ts	(rejected hunks)
+@@ -29,3 +29,3 @@ describe('Component Tests', () => {
+-            useClass: MockLoginService,
+-          },
+-        ],
++            useClass: MockLoginService
++          }
++        ]
+@@ -52 +52 @@ describe('Component Tests', () => {
+-          rememberMe: true,
++          rememberMe: true
+@@ -58 +58 @@ describe('Component Tests', () => {
+-          rememberMe: true,
++          rememberMe: true
+@@ -78 +78 @@ describe('Component Tests', () => {
+-        password: 'admin',
++        password: 'admin'
+@@ -84 +84 @@ describe('Component Tests', () => {
+-        rememberMe: false,
++        rememberMe: false

@@ -1,0 +1,7 @@
+diff a/src/main/webapp/app/app.module.ts b/src/main/webapp/app/app.module.ts	(rejected hunks)
+@@ -25 +25 @@ import { ErrorComponent } from './layouts/error/error.component';
+-    SchoolManagementAppRoutingModule,
++    SchoolManagementAppRoutingModule
+@@ -28 +28 @@ import { ErrorComponent } from './layouts/error/error.component';
+-  bootstrap: [MainComponent],
++  bootstrap: [MainComponent]

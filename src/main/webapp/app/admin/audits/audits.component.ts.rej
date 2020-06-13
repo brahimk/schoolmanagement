@@ -1,0 +1,12 @@
+diff a/src/main/webapp/app/admin/audits/audits.component.ts b/src/main/webapp/app/admin/audits/audits.component.ts	(rejected hunks)
+@@ -12 +12 @@ import { AuditsService } from './audits.service';
+-  templateUrl: './audits.component.html',
++  templateUrl: './audits.component.html'
+@@ -62,2 +62,2 @@ export class AuditsComponent implements OnInit {
+-          sort: this.predicate + ',' + (this.ascending ? 'asc' : 'desc'),
+-        },
++          sort: this.predicate + ',' + (this.ascending ? 'asc' : 'desc')
++        }
+@@ -93 +93 @@ export class AuditsComponent implements OnInit {
+-        toDate: this.toDate,
++        toDate: this.toDate

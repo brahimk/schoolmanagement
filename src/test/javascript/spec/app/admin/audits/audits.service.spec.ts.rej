@@ -1,0 +1,7 @@
+diff a/src/test/javascript/spec/app/admin/audits/audits.service.spec.ts b/src/test/javascript/spec/app/admin/audits/audits.service.spec.ts	(rejected hunks)
+@@ -17 +17 @@ describe('Service Tests', () => {
+-        imports: [HttpClientTestingModule],
++        imports: [HttpClientTestingModule]
+@@ -64 +64 @@ describe('Service Tests', () => {
+-          statusText: 'Bad Request',
++          statusText: 'Bad Request'

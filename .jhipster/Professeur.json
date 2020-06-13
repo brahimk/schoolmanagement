@@ -1,0 +1,48 @@
+{
+    "name": "Professeur",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "prenom",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "comment",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "classe",
+            "otherEntityRelationshipName": "professeur",
+            "relationshipName": "classe"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "feuillePresence",
+            "otherEntityRelationshipName": "professeur",
+            "relationshipName": "feuillePresence"
+        }
+    ],
+    "changelogDate": "20200612230100",
+    "entityTableName": "professeur",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

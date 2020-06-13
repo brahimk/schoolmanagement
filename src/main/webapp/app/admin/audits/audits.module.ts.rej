@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/admin/audits/audits.module.ts b/src/main/webapp/app/admin/audits/audits.module.ts	(rejected hunks)
+@@ -11 +11 @@ import { auditsRoute } from './audits.route';
+-  declarations: [AuditsComponent],
++  declarations: [AuditsComponent]

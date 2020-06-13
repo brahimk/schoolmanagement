@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/admin/logs/logs.module.ts b/src/main/webapp/app/admin/logs/logs.module.ts	(rejected hunks)
+@@ -11 +11 @@ import { logsRoute } from './logs.route';
+-  declarations: [LogsComponent],
++  declarations: [LogsComponent]

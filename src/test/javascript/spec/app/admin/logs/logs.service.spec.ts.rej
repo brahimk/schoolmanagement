@@ -1,0 +1,4 @@
+diff a/src/test/javascript/spec/app/admin/logs/logs.service.spec.ts b/src/test/javascript/spec/app/admin/logs/logs.service.spec.ts	(rejected hunks)
+@@ -14 +14 @@ describe('Service Tests', () => {
+-        imports: [HttpClientTestingModule],
++        imports: [HttpClientTestingModule]

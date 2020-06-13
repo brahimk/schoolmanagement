@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/admin/metrics/metrics.component.ts b/src/main/webapp/app/admin/metrics/metrics.component.ts	(rejected hunks)
+@@ -9 +9 @@ import { MetricsService, Metrics, MetricsKey, ThreadDump, Thread } from './metri
+-  changeDetection: ChangeDetectionStrategy.OnPush,
++  changeDetection: ChangeDetectionStrategy.OnPush

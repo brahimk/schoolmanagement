@@ -39,6 +39,9 @@
         "name": "generator-jhipster-quarkus",
         "version": "0.1.6"
       }
-    ]
+    ],
+    "cacheProvider": "no",
+    "searchEngine": false,
+    "serviceDiscoveryType": false
   }
 }

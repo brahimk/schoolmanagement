@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/admin/logs/logs.component.ts b/src/main/webapp/app/admin/logs/logs.component.ts	(rejected hunks)
+@@ -8 +8 @@ import { LogsService } from './logs.service';
+-  templateUrl: './logs.component.html',
++  templateUrl: './logs.component.html'

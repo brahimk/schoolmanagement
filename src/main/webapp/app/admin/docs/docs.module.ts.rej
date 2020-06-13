@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/admin/docs/docs.module.ts b/src/main/webapp/app/admin/docs/docs.module.ts	(rejected hunks)
+@@ -11 +11 @@ import { docsRoute } from './docs.route';
+-  declarations: [DocsComponent],
++  declarations: [DocsComponent]

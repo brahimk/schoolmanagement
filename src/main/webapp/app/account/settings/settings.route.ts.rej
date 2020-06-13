@@ -1,0 +1,7 @@
+diff a/src/main/webapp/app/account/settings/settings.route.ts b/src/main/webapp/app/account/settings/settings.route.ts	(rejected hunks)
+@@ -12 +12 @@ export const settingsRoute: Route = {
+-    pageTitle: 'Settings',
++    pageTitle: 'Settings'
+@@ -14 +14 @@ export const settingsRoute: Route = {
+-  canActivate: [UserRouteAccessService],
++  canActivate: [UserRouteAccessService]

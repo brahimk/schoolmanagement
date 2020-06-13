@@ -1,0 +1,10 @@
+diff a/src/main/webapp/app/admin/user-management/user-management-update.component.ts b/src/main/webapp/app/admin/user-management/user-management-update.component.ts	(rejected hunks)
+@@ -10 +10 @@ import { UserService } from 'app/core/user/user.service';
+-  templateUrl: './user-management-update.component.html',
++  templateUrl: './user-management-update.component.html'
+@@ -25 +25 @@ export class UserManagementUpdateComponent implements OnInit {
+-    authorities: [],
++    authorities: []
+@@ -75 +75 @@ export class UserManagementUpdateComponent implements OnInit {
+-      authorities: user.authorities,
++      authorities: user.authorities

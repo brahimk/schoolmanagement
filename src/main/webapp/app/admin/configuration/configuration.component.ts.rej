@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/admin/configuration/configuration.component.ts b/src/main/webapp/app/admin/configuration/configuration.component.ts	(rejected hunks)
+@@ -7 +7 @@ import { ConfigurationService, Bean, PropertySource } from './configuration.serv
+-  templateUrl: './configuration.component.html',
++  templateUrl: './configuration.component.html'

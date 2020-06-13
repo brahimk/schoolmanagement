@@ -1,0 +1,12 @@
+diff a/src/main/webapp/app/admin/user-management/user-management.component.ts b/src/main/webapp/app/admin/user-management/user-management.component.ts	(rejected hunks)
+@@ -18 +18 @@ import { UserManagementDeleteDialogComponent } from './user-management-delete-di
+-  templateUrl: './user-management.component.html',
++  templateUrl: './user-management.component.html'
+@@ -85,2 +85,2 @@ export class UserManagementComponent implements OnInit, OnDestroy {
+-        sort: this.predicate + ',' + (this.ascending ? 'asc' : 'desc'),
+-      },
++        sort: this.predicate + ',' + (this.ascending ? 'asc' : 'desc')
++      }
+@@ -101 +101 @@ export class UserManagementComponent implements OnInit, OnDestroy {
+-        sort: this.sort(),
++        sort: this.sort()

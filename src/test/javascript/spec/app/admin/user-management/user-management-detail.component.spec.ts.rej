@@ -1,0 +1,14 @@
+diff a/src/test/javascript/spec/app/admin/user-management/user-management-detail.component.spec.ts b/src/test/javascript/spec/app/admin/user-management/user-management-detail.component.spec.ts	(rejected hunks)
+@@ -15 +15 @@ describe('Component Tests', () => {
+-      data: of({ user: new User(1, 'user', 'first', 'last', 'first@last.com', true, 'en', [Authority.USER], 'admin') }),
++      data: of({ user: new User(1, 'user', 'first', 'last', 'first@last.com', true, 'en', [Authority.USER], 'admin') })
+@@ -25,3 +25,3 @@ describe('Component Tests', () => {
+-            useValue: route,
+-          },
+-        ],
++            useValue: route
++          }
++        ]
+@@ -56 +56 @@ describe('Component Tests', () => {
+-            createdBy: 'admin',
++            createdBy: 'admin'

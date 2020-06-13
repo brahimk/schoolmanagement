@@ -1,0 +1,52 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="classe">
+            <h2><span>Classe</span> {{ classe.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Nom</span></dt>
+                <dd>
+                    <span>{{ classe.nom }}</span>
+                </dd>
+                <dt><span>Niveau</span></dt>
+                <dd>
+                    <span>{{ classe.niveau }}</span>
+                </dd>
+                <dt><span>Salle</span></dt>
+                <dd>
+                    <span>{{ classe.salle }}</span>
+                </dd>
+                <dt><span>Creneau</span></dt>
+                <dd>
+                    <span>{{ classe.creneau }}</span>
+                </dd>
+                <dt><span>Comment</span></dt>
+                <dd>
+                    <span>{{ classe.comment }}</span>
+                </dd>
+                <dt><span>Professeur</span></dt>
+                <dd>
+                    <div *ngIf="classe.professeur">
+                        <a [routerLink]="['/professeur', classe.professeur?.id, 'view']">{{ classe.professeur?.nom }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/classe', classe.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

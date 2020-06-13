@@ -1,0 +1,4 @@
+diff a/src/test/javascript/spec/app/admin/health/health.component.spec.ts b/src/test/javascript/spec/app/admin/health/health.component.spec.ts	(rejected hunks)
+@@ -18 +18 @@ describe('Component Tests', () => {
+-        declarations: [HealthComponent],
++        declarations: [HealthComponent]

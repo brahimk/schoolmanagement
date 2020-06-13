@@ -1,0 +1,13 @@
+diff a/src/main/webapp/app/shared/login/login.component.ts b/src/main/webapp/app/shared/login/login.component.ts	(rejected hunks)
+@@ -10 +10 @@ import { LoginService } from 'app/core/login/login.service';
+-  templateUrl: './login.component.html',
++  templateUrl: './login.component.html'
+@@ -21 +21 @@ export class LoginModalComponent implements AfterViewInit {
+-    rememberMe: [false],
++    rememberMe: [false]
+@@ -36 +36 @@ export class LoginModalComponent implements AfterViewInit {
+-      password: '',
++      password: ''
+@@ -46 +46 @@ export class LoginModalComponent implements AfterViewInit {
+-        rememberMe: this.loginForm.get('rememberMe')!.value,
++        rememberMe: this.loginForm.get('rememberMe')!.value

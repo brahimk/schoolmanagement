@@ -1,0 +1,6 @@
+diff a/src/main/webapp/app/admin/docs/docs.route.ts b/src/main/webapp/app/admin/docs/docs.route.ts	(rejected hunks)
+@@ -9,2 +9,2 @@ export const docsRoute: Route = {
+-    pageTitle: 'API',
+-  },
++    pageTitle: 'API'
++  }

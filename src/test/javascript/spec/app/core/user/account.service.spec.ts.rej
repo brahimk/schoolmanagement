@@ -1,0 +1,14 @@
+diff a/src/test/javascript/spec/app/core/user/account.service.spec.ts b/src/test/javascript/spec/app/core/user/account.service.spec.ts	(rejected hunks)
+@@ -24 +24 @@ function accountWithAuthorities(authorities: string[]): Account {
+-    imageUrl: '',
++    imageUrl: ''
+@@ -42 +42 @@ describe('Service Tests', () => {
+-            useClass: MockStateStorageService,
++            useClass: MockStateStorageService
+@@ -46,3 +46,3 @@ describe('Service Tests', () => {
+-            useClass: MockRouter,
+-          },
+-        ],
++            useClass: MockRouter
++          }
++        ]

@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/admin/configuration/configuration.module.ts b/src/main/webapp/app/admin/configuration/configuration.module.ts	(rejected hunks)
+@@ -11 +11 @@ import { configurationRoute } from './configuration.route';
+-  declarations: [ConfigurationComponent],
++  declarations: [ConfigurationComponent]

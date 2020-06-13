@@ -13,7 +13,10 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebFilter(urlPatterns = "/*", asyncSupported = true)
 public class SpaFilter extends HttpFilter {
-    private static final Pattern FILE_NAME_PATTERN = Pattern.compile(".*[.][a-zA-Z\\d]+");
+
+    private static final long serialVersionUID = 1587373983377229437L;
+    
+	private static final Pattern FILE_NAME_PATTERN = Pattern.compile(".*[.][a-zA-Z\\d]+");
 
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain chain)
         throws IOException, ServletException {

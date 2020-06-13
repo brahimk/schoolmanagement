@@ -14,6 +14,16 @@
     <property name="uuidType" value="uuid" dbms="h2, postgresql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200612225800_added_entity_Famille.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200612225900_added_entity_Eleve.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200612230000_added_entity_Discipline.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200612230100_added_entity_Professeur.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200612230200_added_entity_Classe.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200612230300_added_entity_FeuillePresence.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20200612225900_added_entity_constraints_Eleve.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200612230000_added_entity_constraints_Discipline.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200612230200_added_entity_constraints_Classe.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200612230300_added_entity_constraints_FeuillePresence.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

@@ -1,0 +1,6 @@
+diff a/src/main/webapp/app/account/register/register.route.ts b/src/main/webapp/app/account/register/register.route.ts	(rejected hunks)
+@@ -10,2 +10,2 @@ export const registerRoute: Route = {
+-    pageTitle: 'Registration',
+-  },
++    pageTitle: 'Registration'
++  }

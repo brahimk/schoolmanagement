@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/layouts/error/error.component.ts b/src/main/webapp/app/layouts/error/error.component.ts	(rejected hunks)
+@@ -6 +6 @@ import { ActivatedRoute } from '@angular/router';
+-  templateUrl: './error.component.html',
++  templateUrl: './error.component.html'

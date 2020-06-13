@@ -1,0 +1,4 @@
+diff a/src/test/javascript/spec/app/layouts/main/main.component.spec.ts b/src/test/javascript/spec/app/layouts/main/main.component.spec.ts	(rejected hunks)
+@@ -22 +22 @@ describe('Component Tests', () => {
+-        providers: [Title],
++        providers: [Title]

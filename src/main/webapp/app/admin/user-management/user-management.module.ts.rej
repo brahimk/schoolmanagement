@@ -1,0 +1,7 @@
+diff a/src/main/webapp/app/admin/user-management/user-management.module.ts b/src/main/webapp/app/admin/user-management/user-management.module.ts	(rejected hunks)
+@@ -17 +17 @@ import { userManagementRoute } from './user-management.route';
+-    UserManagementDeleteDialogComponent,
++    UserManagementDeleteDialogComponent
+@@ -19 +19 @@ import { userManagementRoute } from './user-management.route';
+-  entryComponents: [UserManagementDeleteDialogComponent],
++  entryComponents: [UserManagementDeleteDialogComponent]

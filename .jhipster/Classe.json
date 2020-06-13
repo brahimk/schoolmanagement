@@ -1,0 +1,59 @@
+{
+    "name": "Classe",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "niveau",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "salle",
+            "fieldType": "Salle",
+            "fieldValues": "SALLE_1,SALLE_2,SALLE_3,SALLE_4,SALLE_5,SALLE_6,SALLE_7,SALLE_8,SALLE_9,SALLE_10,SALLE_11,SALLE_12,SALLE_13,AUTRE"
+        },
+        {
+            "fieldName": "creneau",
+            "fieldType": "Creneau",
+            "fieldValues": "MECREDI_MATIN,MERCREDI_APRES_MIDI,SAMEDI_MATIN,SAMEDI_APRES_MIDI,DIMANCHE_MATIN,DIMANCHE_APRES_MIDI"
+        },
+        {
+            "fieldName": "comment",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "eleve",
+            "otherEntityRelationshipName": "classe",
+            "relationshipName": "eleve"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "professeur",
+            "otherEntityRelationshipName": "classe",
+            "relationshipName": "professeur",
+            "otherEntityField": "nom"
+        }
+    ],
+    "changelogDate": "20200612230200",
+    "entityTableName": "classe",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

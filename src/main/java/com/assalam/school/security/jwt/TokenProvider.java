@@ -18,12 +18,12 @@ import org.jose4j.jws.JsonWebSignature;
 import org.jose4j.jwt.JwtClaims;
 import org.jose4j.jwt.NumericDate;
 import org.jose4j.lang.JoseException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+// import org.slf4j.Logger;
+// import org.slf4j.LoggerFactory;
 
 @ApplicationScoped
 public class TokenProvider {
-    private final Logger log = LoggerFactory.getLogger(TokenProvider.class);
+    // private final Logger log = LoggerFactory.getLogger(TokenProvider.class);
 
     private static final String AUTHORITIES_KEY = "auth"; // Claim JHiptser front-end uses
     public static final String GROUPS_KEY = "groups"; // Default claim for MP-JWT

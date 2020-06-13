@@ -1,0 +1,26 @@
+diff a/src/test/javascript/spec/app/shared/alert/alert-error.component.spec.ts b/src/test/javascript/spec/app/shared/alert/alert-error.component.spec.ts	(rejected hunks)
+@@ -23,3 +23,3 @@ describe('Component Tests', () => {
+-            useClass: MockAlertService,
+-          },
+-        ],
++            useClass: MockAlertService
++          }
++        ]
+@@ -76,2 +76,2 @@ describe('Component Tests', () => {
+-            message: 'error.validation',
+-          },
++            message: 'error.validation'
++          }
+@@ -91 +91 @@ describe('Component Tests', () => {
+-          error: 'Bad Request',
++          error: 'Bad Request'
+@@ -112,2 +112,2 @@ describe('Component Tests', () => {
+-            fieldErrors: [{ objectName: 'foo', field: 'minField', message: 'Min' }],
+-          },
++            fieldErrors: [{ objectName: 'foo', field: 'minField', message: 'Min' }]
++          }
+@@ -130,2 +130,2 @@ describe('Component Tests', () => {
+-            message: 'error.validation',
+-          },
++            message: 'error.validation'
++          }

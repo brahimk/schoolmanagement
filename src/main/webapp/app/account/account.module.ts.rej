@@ -1,0 +1,6 @@
+diff a/src/main/webapp/app/account/account.module.ts b/src/main/webapp/app/account/account.module.ts	(rejected hunks)
+@@ -24,2 +24,2 @@ import { accountState } from './account.route';
+-    SettingsComponent,
+-  ],
++    SettingsComponent
++  ]

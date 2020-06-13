@@ -1,0 +1,18 @@
+diff a/src/test/javascript/spec/app/admin/logs/logs.component.spec.ts b/src/test/javascript/spec/app/admin/logs/logs.component.spec.ts	(rejected hunks)
+@@ -19 +19 @@ describe('Component Tests', () => {
+-        providers: [LogsService],
++        providers: [LogsService]
+@@ -45,3 +45,3 @@ describe('Component Tests', () => {
+-                effectiveLevel: 'WARN',
+-              },
+-            },
++                effectiveLevel: 'WARN'
++              }
++            }
+@@ -69,3 +69,3 @@ describe('Component Tests', () => {
+-                effectiveLevel: 'ERROR',
+-              },
+-            },
++                effectiveLevel: 'ERROR'
++              }
++            }

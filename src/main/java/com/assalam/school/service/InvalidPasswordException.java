@@ -7,7 +7,9 @@ import javax.ws.rs.core.Response;
 
 public class InvalidPasswordException extends WebApplicationException {
 
-    public InvalidPasswordException() {
+	private static final long serialVersionUID = -8780070336797215035L;
+
+	public InvalidPasswordException() {
         super(Response.status(BAD_REQUEST).entity("Incorrect Password").build());
     }
 }

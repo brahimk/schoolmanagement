@@ -1,0 +1,6 @@
+diff a/src/main/webapp/app/admin/configuration/configuration.route.ts b/src/main/webapp/app/admin/configuration/configuration.route.ts	(rejected hunks)
+@@ -9,2 +9,2 @@ export const configurationRoute: Route = {
+-    pageTitle: 'Configuration',
+-  },
++    pageTitle: 'Configuration'
++  }

@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/shared/constants/authority.constants.ts b/src/main/webapp/app/shared/constants/authority.constants.ts	(rejected hunks)
+@@ -3 +3 @@ export enum Authority {
+-  USER = 'ROLE_USER',
++  USER = 'ROLE_USER'

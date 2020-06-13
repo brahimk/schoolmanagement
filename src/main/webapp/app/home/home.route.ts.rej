@@ -1,0 +1,6 @@
+diff a/src/main/webapp/app/home/home.route.ts b/src/main/webapp/app/home/home.route.ts	(rejected hunks)
+@@ -10,2 +10,2 @@ export const HOME_ROUTE: Route = {
+-    pageTitle: 'Welcome, Java Hipster!',
+-  },
++    pageTitle: 'Welcome, Java Hipster!'
++  }

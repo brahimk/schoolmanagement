@@ -1,0 +1,82 @@
+{
+    "name": "Eleve",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "prenom",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateNaissance",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "niveauScolaire",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "niveauArabe",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "comment",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "image",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "any"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "feuillePresence",
+            "otherEntityRelationshipName": "eleve",
+            "relationshipName": "feuillePresence"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "discipline",
+            "otherEntityRelationshipName": "eleve",
+            "relationshipName": "discipline"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "famille",
+            "otherEntityRelationshipName": "eleve",
+            "relationshipName": "famille",
+            "otherEntityField": "nom"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "classe",
+            "otherEntityRelationshipName": "eleve",
+            "relationshipName": "classe",
+            "otherEntityField": "nom"
+        }
+    ],
+    "changelogDate": "20200612225900",
+    "entityTableName": "eleve",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

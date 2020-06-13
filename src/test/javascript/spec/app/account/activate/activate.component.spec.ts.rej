@@ -1,0 +1,8 @@
+diff a/src/test/javascript/spec/app/account/activate/activate.component.spec.ts b/src/test/javascript/spec/app/account/activate/activate.component.spec.ts	(rejected hunks)
+@@ -21,3 +21,3 @@ describe('Component Tests', () => {
+-            useValue: new MockActivatedRoute({ key: 'ABC123' }),
+-          },
+-        ],
++            useValue: new MockActivatedRoute({ key: 'ABC123' })
++          }
++        ]

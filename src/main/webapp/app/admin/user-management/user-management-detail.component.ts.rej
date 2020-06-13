@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/admin/user-management/user-management-detail.component.ts b/src/main/webapp/app/admin/user-management/user-management-detail.component.ts	(rejected hunks)
+@@ -8 +8 @@ import { User } from 'app/core/user/user.model';
+-  templateUrl: './user-management-detail.component.html',
++  templateUrl: './user-management-detail.component.html'

@@ -1,0 +1,6 @@
+diff a/src/main/webapp/app/entities/entity.module.ts b/src/main/webapp/app/entities/entity.module.ts	(rejected hunks)
+@@ -8,2 +8,2 @@ import { RouterModule } from '@angular/router';
+-    ]),
+-  ],
++    ])
++  ]

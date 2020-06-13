@@ -1,0 +1,66 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="famille">
+            <h2><span>Famille</span> {{ famille.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Nom</span></dt>
+                <dd>
+                    <span>{{ famille.nom }}</span>
+                </dd>
+                <dt><span>Prenom</span></dt>
+                <dd>
+                    <span>{{ famille.prenom }}</span>
+                </dd>
+                <dt><span>Adresse</span></dt>
+                <dd>
+                    <span>{{ famille.adresse }}</span>
+                </dd>
+                <dt><span>Code Postal</span></dt>
+                <dd>
+                    <span>{{ famille.codePostal }}</span>
+                </dd>
+                <dt><span>Ville</span></dt>
+                <dd>
+                    <span>{{ famille.ville }}</span>
+                </dd>
+                <dt><span>Telephone 1</span></dt>
+                <dd>
+                    <span>{{ famille.telephone1 }}</span>
+                </dd>
+                <dt><span>Telephone 2</span></dt>
+                <dd>
+                    <span>{{ famille.telephone2 }}</span>
+                </dd>
+                <dt><span>Email 1</span></dt>
+                <dd>
+                    <span>{{ famille.email1 }}</span>
+                </dd>
+                <dt><span>Email 2</span></dt>
+                <dd>
+                    <span>{{ famille.email2 }}</span>
+                </dd>
+                <dt><span>Comment</span></dt>
+                <dd>
+                    <span>{{ famille.comment }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/famille', famille.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

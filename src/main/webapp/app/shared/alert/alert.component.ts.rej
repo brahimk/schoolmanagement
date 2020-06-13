@@ -1,0 +1,17 @@
+diff a/src/main/webapp/app/shared/alert/alert.component.ts b/src/main/webapp/app/shared/alert/alert.component.ts	(rejected hunks)
+@@ -6,5 +6,7 @@ import { JhiAlertService, JhiAlert } from 'ng-jhipster';
+-  template: ` <div class="alerts" role="alert">
+-    <div *ngFor="let alert of alerts" [ngClass]="setClasses(alert)">
+-      <ngb-alert *ngIf="alert && alert.type && alert.msg" [type]="alert.type" (close)="alert.close(alerts)">
+-        <pre [innerHTML]="alert.msg"></pre>
+-      </ngb-alert>
++  template: `
++    <div class="alerts" role="alert">
++      <div *ngFor="let alert of alerts" [ngClass]="setClasses(alert)">
++        <ngb-alert *ngIf="alert && alert.type && alert.msg" [type]="alert.type" (close)="alert.close(alerts)">
++          <pre [innerHTML]="alert.msg"></pre>
++        </ngb-alert>
++      </div>
+@@ -12 +14 @@ import { JhiAlertService, JhiAlert } from 'ng-jhipster';
+-  </div>`,
++  `

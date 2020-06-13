@@ -1,0 +1,31 @@
+diff a/src/main/webapp/app/admin/admin-routing.module.ts b/src/main/webapp/app/admin/admin-routing.module.ts	(rejected hunks)
+@@ -13,2 +13,2 @@ import { RouterModule } from '@angular/router';
+-          pageTitle: 'Users',
+-        },
++          pageTitle: 'Users'
++        }
+@@ -18 +18 @@ import { RouterModule } from '@angular/router';
+-        loadChildren: () => import('./audits/audits.module').then(m => m.AuditsModule),
++        loadChildren: () => import('./audits/audits.module').then(m => m.AuditsModule)
+@@ -22 +22 @@ import { RouterModule } from '@angular/router';
+-        loadChildren: () => import('./configuration/configuration.module').then(m => m.ConfigurationModule),
++        loadChildren: () => import('./configuration/configuration.module').then(m => m.ConfigurationModule)
+@@ -26 +26 @@ import { RouterModule } from '@angular/router';
+-        loadChildren: () => import('./docs/docs.module').then(m => m.DocsModule),
++        loadChildren: () => import('./docs/docs.module').then(m => m.DocsModule)
+@@ -30 +30 @@ import { RouterModule } from '@angular/router';
+-        loadChildren: () => import('./health/health.module').then(m => m.HealthModule),
++        loadChildren: () => import('./health/health.module').then(m => m.HealthModule)
+@@ -34 +34 @@ import { RouterModule } from '@angular/router';
+-        loadChildren: () => import('./logs/logs.module').then(m => m.LogsModule),
++        loadChildren: () => import('./logs/logs.module').then(m => m.LogsModule)
+@@ -38,2 +38,2 @@ import { RouterModule } from '@angular/router';
+-        loadChildren: () => import('./metrics/metrics.module').then(m => m.MetricsModule),
+-      },
++        loadChildren: () => import('./metrics/metrics.module').then(m => m.MetricsModule)
++      }
+@@ -41,2 +41,2 @@ import { RouterModule } from '@angular/router';
+-    ]),
+-  ],
++    ])
++  ]

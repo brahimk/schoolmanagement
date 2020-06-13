@@ -1,0 +1,88 @@
+<div>
+    <h2 id="page-heading">
+        <span>Eleves</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-eleve" [routerLink]="['/eleve/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span>
+            Create a new Eleve
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="eleves?.length === 0">
+        <span>No eleves found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="eleves?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span>ID</span></th>
+                    <th scope="col" ><span>Nom</span></th>
+                    <th scope="col" ><span>Prenom</span></th>
+                    <th scope="col" ><span>Date Naissance</span></th>
+                    <th scope="col" ><span>Niveau Scolaire</span></th>
+                    <th scope="col" ><span>Niveau Arabe</span></th>
+                    <th scope="col" ><span>Comment</span></th>
+                    <th scope="col" ><span>Image</span></th>
+                    <th scope="col" ><span>Famille</span></th>
+                    <th scope="col" ><span>Classe</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let eleve of eleves ;trackBy: trackId">
+                    <td><a [routerLink]="['/eleve', eleve.id, 'view']">{{ eleve.id }}</a></td>
+                    <td>{{ eleve.nom }}</td>
+                    <td>{{ eleve.prenom }}</td>
+                    <td>{{ eleve.dateNaissance | date:'medium' }}</td>
+                    <td>{{ eleve.niveauScolaire }}</td>
+                    <td>{{ eleve.niveauArabe }}</td>
+                    <td>{{ eleve.comment }}</td>
+                    <td>
+                        <a *ngIf="eleve.image" (click)="openFile(eleve.imageContentType, eleve.image)">open</a>
+                        <span *ngIf="eleve.image">{{ eleve.imageContentType }}, {{ byteSize(eleve.image) }}</span>
+                    </td>
+                    <td>
+                        <div *ngIf="eleve.famille">
+                            <a [routerLink]="['/famille', eleve.famille?.id, 'view']" >{{ eleve.famille?.nom }}</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div *ngIf="eleve.classe">
+                            <a [routerLink]="['/classe', eleve.classe?.id, 'view']" >{{ eleve.classe?.nom }}</a>
+                        </div>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/eleve', eleve.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/eleve', eleve.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(eleve)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

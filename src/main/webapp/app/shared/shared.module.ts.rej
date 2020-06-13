@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/shared/shared.module.ts b/src/main/webapp/app/shared/shared.module.ts	(rejected hunks)
+@@ -12 +12 @@ import { HasAnyAuthorityDirective } from './auth/has-any-authority.directive';
+-  exports: [SchoolManagementSharedLibsModule, AlertComponent, AlertErrorComponent, LoginModalComponent, HasAnyAuthorityDirective],
++  exports: [SchoolManagementSharedLibsModule, AlertComponent, AlertErrorComponent, LoginModalComponent, HasAnyAuthorityDirective]

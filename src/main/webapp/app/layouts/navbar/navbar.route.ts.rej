@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/layouts/navbar/navbar.route.ts b/src/main/webapp/app/layouts/navbar/navbar.route.ts	(rejected hunks)
+@@ -8 +8 @@ export const navbarRoute: Route = {
+-  outlet: 'navbar',
++  outlet: 'navbar'

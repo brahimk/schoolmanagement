@@ -1,0 +1,30 @@
+diff a/src/test/javascript/spec/test.module.ts b/src/test/javascript/spec/test.module.ts	(rejected hunks)
+@@ -23 +23 @@ import { MockEventManager } from './helpers/mock-event-manager.service';
+-      useClass: MockEventManager,
++      useClass: MockEventManager
+@@ -27 +27 @@ import { MockEventManager } from './helpers/mock-event-manager.service';
+-      useClass: MockActiveModal,
++      useClass: MockActiveModal
+@@ -31 +31 @@ import { MockEventManager } from './helpers/mock-event-manager.service';
+-      useValue: new MockActivatedRoute({ id: 123 }),
++      useValue: new MockActivatedRoute({ id: 123 })
+@@ -35 +35 @@ import { MockEventManager } from './helpers/mock-event-manager.service';
+-      useClass: MockRouter,
++      useClass: MockRouter
+@@ -39 +39 @@ import { MockEventManager } from './helpers/mock-event-manager.service';
+-      useClass: MockAccountService,
++      useClass: MockAccountService
+@@ -43 +43 @@ import { MockEventManager } from './helpers/mock-event-manager.service';
+-      useValue: null,
++      useValue: null
+@@ -47 +47 @@ import { MockEventManager } from './helpers/mock-event-manager.service';
+-      useValue: null,
++      useValue: null
+@@ -51,2 +51,2 @@ import { MockEventManager } from './helpers/mock-event-manager.service';
+-      useValue: null,
+-    },
++      useValue: null
++    }
+@@ -54 +54 @@ import { MockEventManager } from './helpers/mock-event-manager.service';
+-  imports: [HttpClientTestingModule],
++  imports: [HttpClientTestingModule]

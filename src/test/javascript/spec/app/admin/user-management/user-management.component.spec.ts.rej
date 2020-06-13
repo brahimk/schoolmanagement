@@ -1,0 +1,10 @@
+diff a/src/test/javascript/spec/app/admin/user-management/user-management.component.spec.ts b/src/test/javascript/spec/app/admin/user-management/user-management.component.spec.ts	(rejected hunks)
+@@ -19 +19 @@ describe('Component Tests', () => {
+-        declarations: [UserManagementComponent],
++        declarations: [UserManagementComponent]
+@@ -41 +41 @@ describe('Component Tests', () => {
+-                headers,
++                headers
+@@ -68 +68 @@ describe('Component Tests', () => {
+-                headers,
++                headers

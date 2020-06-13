@@ -1,0 +1,52 @@
+{
+    "name": "FeuillePresence",
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "present",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "comment",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "professeur",
+            "otherEntityRelationshipName": "feuillePresence",
+            "relationshipName": "professeur",
+            "otherEntityField": "nom"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "eleve",
+            "otherEntityRelationshipName": "feuillePresence",
+            "relationshipName": "eleve",
+            "otherEntityField": "prenom"
+        }
+    ],
+    "changelogDate": "20200612230300",
+    "entityTableName": "feuille_presence",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

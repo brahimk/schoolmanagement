@@ -1,0 +1,21 @@
+diff a/src/main/webapp/app/layouts/error/error.route.ts b/src/main/webapp/app/layouts/error/error.route.ts	(rejected hunks)
+@@ -11,2 +11,2 @@ export const errorRoute: Routes = [
+-      pageTitle: 'Error page!',
+-    },
++      pageTitle: 'Error page!'
++    }
+@@ -20,2 +20,2 @@ export const errorRoute: Routes = [
+-      errorMessage: 'You are not authorized to access this page.',
+-    },
++      errorMessage: 'You are not authorized to access this page.'
++    }
+@@ -29,2 +29,2 @@ export const errorRoute: Routes = [
+-      errorMessage: 'The page does not exist.',
+-    },
++      errorMessage: 'The page does not exist.'
++    }
+@@ -34,2 +34,2 @@ export const errorRoute: Routes = [
+-    redirectTo: '/404',
+-  },
++    redirectTo: '/404'
++  }

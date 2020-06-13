@@ -1,0 +1,26 @@
+diff a/src/main/webapp/app/admin/user-management/user-management.route.ts b/src/main/webapp/app/admin/user-management/user-management.route.ts	(rejected hunks)
+@@ -30 +30 @@ export const userManagementRoute: Routes = [
+-      pagingParams: JhiResolvePagingParams,
++      pagingParams: JhiResolvePagingParams
+@@ -33,2 +33,2 @@ export const userManagementRoute: Routes = [
+-      defaultSort: 'id,asc',
+-    },
++      defaultSort: 'id,asc'
++    }
+@@ -40,2 +40,2 @@ export const userManagementRoute: Routes = [
+-      user: UserManagementResolve,
+-    },
++      user: UserManagementResolve
++    }
+@@ -47,2 +47,2 @@ export const userManagementRoute: Routes = [
+-      user: UserManagementResolve,
+-    },
++      user: UserManagementResolve
++    }
+@@ -54,3 +54,3 @@ export const userManagementRoute: Routes = [
+-      user: UserManagementResolve,
+-    },
+-  },
++      user: UserManagementResolve
++    }
++  }

@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/account/activate/activate.component.ts b/src/main/webapp/app/account/activate/activate.component.ts	(rejected hunks)
+@@ -10 +10 @@ import { ActivateService } from './activate.service';
+-  templateUrl: './activate.component.html',
++  templateUrl: './activate.component.html'

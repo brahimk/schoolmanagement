@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/shared/shared-libs.module.ts b/src/main/webapp/app/shared/shared-libs.module.ts	(rejected hunks)
+@@ -10 +10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+-  exports: [FormsModule, CommonModule, NgbModule, NgJhipsterModule, InfiniteScrollModule, FontAwesomeModule, ReactiveFormsModule],
++  exports: [FormsModule, CommonModule, NgbModule, NgJhipsterModule, InfiniteScrollModule, FontAwesomeModule, ReactiveFormsModule]

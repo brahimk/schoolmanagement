@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/admin/health/health-modal.component.ts b/src/main/webapp/app/admin/health/health-modal.component.ts	(rejected hunks)
+@@ -8 +8 @@ import { HealthKey, HealthDetails } from './health.service';
+-  templateUrl: './health-modal.component.html',
++  templateUrl: './health-modal.component.html'

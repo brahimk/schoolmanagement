@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/admin/audits/audits.service.ts b/src/main/webapp/app/admin/audits/audits.service.ts	(rejected hunks)
+@@ -25 +25 @@ export class AuditsService {
+-      observe: 'response',
++      observe: 'response'

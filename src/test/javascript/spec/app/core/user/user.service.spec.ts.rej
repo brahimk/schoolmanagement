@@ -1,0 +1,7 @@
+diff a/src/test/javascript/spec/app/core/user/user.service.spec.ts b/src/test/javascript/spec/app/core/user/user.service.spec.ts	(rejected hunks)
+@@ -19 +19 @@ describe('Service Tests', () => {
+-        providers: [JhiDateUtils],
++        providers: [JhiDateUtils]
+@@ -73 +73 @@ describe('Service Tests', () => {
+-          statusText: 'Bad Request',
++          statusText: 'Bad Request'

@@ -1,0 +1,19 @@
+diff a/src/main/webapp/app/app-routing.module.ts b/src/main/webapp/app/app-routing.module.ts	(rejected hunks)
+@@ -19 +19 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
+-            authorities: [Authority.ADMIN],
++            authorities: [Authority.ADMIN]
+@@ -22 +22 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
+-          loadChildren: () => import('./admin/admin-routing.module').then(m => m.AdminRoutingModule),
++          loadChildren: () => import('./admin/admin-routing.module').then(m => m.AdminRoutingModule)
+@@ -26 +26 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
+-          loadChildren: () => import('./account/account.module').then(m => m.AccountModule),
++          loadChildren: () => import('./account/account.module').then(m => m.AccountModule)
+@@ -28 +28 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
+-        ...LAYOUT_ROUTES,
++        ...LAYOUT_ROUTES
+@@ -31 +31 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
+-    ),
++    )
+@@ -33 +33 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
+-  exports: [RouterModule],
++  exports: [RouterModule]

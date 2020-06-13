@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/admin/health/health.module.ts b/src/main/webapp/app/admin/health/health.module.ts	(rejected hunks)
+@@ -13 +13 @@ import { healthRoute } from './health.route';
+-  entryComponents: [HealthModalComponent],
++  entryComponents: [HealthModalComponent]

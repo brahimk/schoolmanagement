@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/layouts/footer/footer.component.ts b/src/main/webapp/app/layouts/footer/footer.component.ts	(rejected hunks)
+@@ -5 +5 @@ import { Component } from '@angular/core';
+-  templateUrl: './footer.component.html',
++  templateUrl: './footer.component.html'

@@ -1,0 +1,6 @@
+diff a/src/main/webapp/app/admin/metrics/metrics.route.ts b/src/main/webapp/app/admin/metrics/metrics.route.ts	(rejected hunks)
+@@ -9,2 +9,2 @@ export const metricsRoute: Route = {
+-    pageTitle: 'Application Metrics',
+-  },
++    pageTitle: 'Application Metrics'
++  }

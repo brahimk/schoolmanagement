@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/admin/docs/docs.component.ts b/src/main/webapp/app/admin/docs/docs.component.ts	(rejected hunks)
+@@ -6 +6 @@ import { Component } from '@angular/core';
+-  styleUrls: ['docs.scss'],
++  styleUrls: ['docs.scss']

@@ -1,0 +1,7 @@
+diff a/src/main/webapp/app/account/register/register.component.ts b/src/main/webapp/app/account/register/register.component.ts	(rejected hunks)
+@@ -11 +11 @@ import { RegisterService } from './register.service';
+-  templateUrl: './register.component.html',
++  templateUrl: './register.component.html'
+@@ -27 +27 @@ export class RegisterComponent implements AfterViewInit {
+-    confirmPassword: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(50)]],
++    confirmPassword: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(50)]]

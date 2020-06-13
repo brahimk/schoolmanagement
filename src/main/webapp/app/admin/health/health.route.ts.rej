@@ -1,0 +1,6 @@
+diff a/src/main/webapp/app/admin/health/health.route.ts b/src/main/webapp/app/admin/health/health.route.ts	(rejected hunks)
+@@ -9,2 +9,2 @@ export const healthRoute: Route = {
+-    pageTitle: 'Health Checks',
+-  },
++    pageTitle: 'Health Checks'
++  }

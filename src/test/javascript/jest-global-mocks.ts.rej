@@ -1,0 +1,4 @@
+diff a/src/test/javascript/jest-global-mocks.ts b/src/test/javascript/jest-global-mocks.ts	(rejected hunks)
+@@ -2 +2 @@ Object.defineProperty(window, 'getComputedStyle', {
+-  value: () => ['-webkit-appearance'],
++  value: () => ['-webkit-appearance']

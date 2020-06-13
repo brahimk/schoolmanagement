@@ -1,0 +1,31 @@
+diff a/src/test/javascript/spec/app/account/register/register.component.spec.ts b/src/test/javascript/spec/app/account/register/register.component.spec.ts	(rejected hunks)
+@@ -19 +19 @@ describe('Component Tests', () => {
+-        providers: [FormBuilder],
++        providers: [FormBuilder]
+@@ -33 +33 @@ describe('Component Tests', () => {
+-        confirmPassword: 'non-matching',
++        confirmPassword: 'non-matching'
+@@ -47 +47 @@ describe('Component Tests', () => {
+-          confirmPassword: 'password',
++          confirmPassword: 'password'
+@@ -57 +57 @@ describe('Component Tests', () => {
+-          langKey: 'en',
++          langKey: 'en'
+@@ -72 +72 @@ describe('Component Tests', () => {
+-            error: { type: LOGIN_ALREADY_USED_TYPE },
++            error: { type: LOGIN_ALREADY_USED_TYPE }
+@@ -77 +77 @@ describe('Component Tests', () => {
+-          confirmPassword: 'password',
++          confirmPassword: 'password'
+@@ -95 +95 @@ describe('Component Tests', () => {
+-            error: { type: EMAIL_ALREADY_USED_TYPE },
++            error: { type: EMAIL_ALREADY_USED_TYPE }
+@@ -100 +100 @@ describe('Component Tests', () => {
+-          confirmPassword: 'password',
++          confirmPassword: 'password'
+@@ -117 +117 @@ describe('Component Tests', () => {
+-            status: 503,
++            status: 503
+@@ -122 +122 @@ describe('Component Tests', () => {
+-          confirmPassword: 'password',
++          confirmPassword: 'password'

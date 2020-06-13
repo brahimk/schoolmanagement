@@ -1,0 +1,6 @@
+diff a/src/main/webapp/app/blocks/interceptor/auth.interceptor.ts b/src/main/webapp/app/blocks/interceptor/auth.interceptor.ts	(rejected hunks)
+@@ -21,2 +21,2 @@ export class AuthInterceptor implements HttpInterceptor {
+-          Authorization: 'Bearer ' + token,
+-        },
++          Authorization: 'Bearer ' + token
++        }

@@ -1,0 +1,120 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-eleve-heading">Create or edit a Eleve</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_nom">Nom</label>
+                    <input type="text" class="form-control" name="nom" id="field_nom"
+                           formControlName="nom"/>
+                    <div *ngIf="editForm.get('nom')!.invalid && (editForm.get('nom')!.dirty || editForm.get('nom')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('nom')?.errors?.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_prenom">Prenom</label>
+                    <input type="text" class="form-control" name="prenom" id="field_prenom"
+                           formControlName="prenom"/>
+                    <div *ngIf="editForm.get('prenom')!.invalid && (editForm.get('prenom')!.dirty || editForm.get('prenom')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('prenom')?.errors?.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_dateNaissance">Date Naissance</label>
+                    <div class="d-flex">
+                        <input id="field_dateNaissance" type="datetime-local" class="form-control" name="dateNaissance" formControlName="dateNaissance" placeholder="YYYY-MM-DD HH:mm"/>
+                    </div>
+                    <div *ngIf="editForm.get('dateNaissance')!.invalid && (editForm.get('dateNaissance')!.dirty || editForm.get('dateNaissance')!.touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('dateNaissance')?.errors?.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.get('dateNaissance')?.errors?.ZonedDateTimelocal">
+                            This field should be a date and time.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_niveauScolaire">Niveau Scolaire</label>
+                    <input type="text" class="form-control" name="niveauScolaire" id="field_niveauScolaire"
+                           formControlName="niveauScolaire"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_niveauArabe">Niveau Arabe</label>
+                    <input type="text" class="form-control" name="niveauArabe" id="field_niveauArabe"
+                           formControlName="niveauArabe"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_comment">Comment</label>
+                    <input type="text" class="form-control" name="comment" id="field_comment"
+                           formControlName="comment"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_image">Image</label>
+                    <div>
+                        <div *ngIf="editForm.get('image')!.value" class="form-text text-danger clearfix">
+                            <a class="pull-left" (click)="openFile(editForm.get('imageContentType')!.value, editForm.get('image')!.value)">open</a><br>
+                            <span class="pull-left">{{ editForm.get('imageContentType')!.value }}, {{ byteSize(editForm.get('image')!.value) }}</span>
+                            <button type="button" (click)="editForm.patchValue({image: null});editForm.patchValue({imageContentType: null});"
+                                    class="btn btn-secondary btn-xs pull-right">
+                                <fa-icon icon="times"></fa-icon>
+                            </button>
+                        </div>
+                        <input type="file" id="file_image" (change)="setFileData($event, 'image', false)"/>
+                    </div>
+                    <input type="hidden" class="form-control" name="image" id="field_image"
+                           formControlName="image"/>
+                    <input type="hidden" class="form-control" name="imageContentType" id="field_imageContentType"
+                           formControlName="imageContentType" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_famille">Famille</label>
+                    <select class="form-control" id="field_famille" name="famille" formControlName="famille">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="familleOption.id === editForm.get('famille')!.value?.id ? editForm.get('famille')!.value : familleOption" *ngFor="let familleOption of familles; trackBy: trackById">{{ familleOption.nom }}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_classe">Classe</label>
+                    <select class="form-control" id="field_classe" name="classe" formControlName="classe">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="classeOption.id === editForm.get('classe')!.value?.id ? editForm.get('classe')!.value : classeOption" *ngFor="let classeOption of classes; trackBy: trackById">{{ classeOption.nom }}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span>Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span>Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

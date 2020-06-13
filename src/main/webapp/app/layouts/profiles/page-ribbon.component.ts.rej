@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/layouts/profiles/page-ribbon.component.ts b/src/main/webapp/app/layouts/profiles/page-ribbon.component.ts	(rejected hunks)
+@@ -13 +13 @@ import { ProfileService } from './profile.service';
+-  styleUrls: ['page-ribbon.scss'],
++  styleUrls: ['page-ribbon.scss']

@@ -42,7 +42,7 @@ entity Classe {
     comment String
 }
 
-entity FeuillePresenceEleve {
+entity FeuillePresence {
 	date Instant required
     present Boolean
     description TextBlob
@@ -62,12 +62,12 @@ enum Salle {
     SALLE_13, AUTRE
 }
 
-// defining multiple OneToMany relationships with comments
 relationship OneToMany {
-	Famille to Eleve{enfant(prenom)},	
-	Discipline to Eleve{eleve(prenom)},	
-	Professeur to Classe{classe(nom)},	
-	Classe to Eleve{eleve(prenom)},	
-	Classe to FeuillePresenceEleve{feuillepresence(prenom)}	
-	FeuillePresenceEleve to Eleve{eleve(prenom)},
+	Famille to Eleve{famille(nom)},
+	Professeur to Classe{professeur(nom)},	
+	Classe to Eleve{classe(nom)},	
+	Professeur to FeuillePresence{professeur(nom)},	
+	Eleve to FeuillePresence{eleve(prenom)},	
+	Eleve to Discipline{eleve(prenom)}	
 }
+

@@ -1,0 +1,7 @@
+diff a/src/test/javascript/spec/app/admin/metrics/metrics.service.spec.ts b/src/test/javascript/spec/app/admin/metrics/metrics.service.spec.ts	(rejected hunks)
+@@ -14 +14 @@ describe('Service Tests', () => {
+-        imports: [HttpClientTestingModule],
++        imports: [HttpClientTestingModule]
+@@ -42 +42 @@ describe('Service Tests', () => {
+-          processMetrics: {},
++          processMetrics: {}

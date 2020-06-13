@@ -85,10 +85,7 @@ describe('Component Tests', () => {
     it('should notify of error if change password fails', () => {
       // GIVEN
       spyOn(service, 'save').and.returnValue(throwError('ERROR'));
-      comp.passwordForm.patchValue({
-        newPassword: 'myPassword',
-        confirmPassword: 'myPassword'
-      });
+      comp.passwordForm.patchValue({ newPassword: 'myPassword', confirmPassword: 'myPassword' });
 
       // WHEN
       comp.changePassword();

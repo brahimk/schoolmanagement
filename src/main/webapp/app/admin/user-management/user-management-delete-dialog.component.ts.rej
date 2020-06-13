@@ -1,0 +1,4 @@
+diff a/src/main/webapp/app/admin/user-management/user-management-delete-dialog.component.ts b/src/main/webapp/app/admin/user-management/user-management-delete-dialog.component.ts	(rejected hunks)
+@@ -10 +10 @@ import { UserService } from 'app/core/user/user.service';
+-  templateUrl: './user-management-delete-dialog.component.html',
++  templateUrl: './user-management-delete-dialog.component.html'
